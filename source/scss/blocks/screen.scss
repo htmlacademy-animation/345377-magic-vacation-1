@@ -7,7 +7,7 @@
   overflow: hidden;
 
   &--hidden {
-    visibility: hidden;
+    display: none;
   }
 
   &.active .intro__message {
