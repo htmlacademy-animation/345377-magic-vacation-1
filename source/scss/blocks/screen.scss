@@ -7,7 +7,19 @@
   overflow: hidden;
 
   &--hidden {
-    display: none;
+    visibility: hidden;
+  }
+
+  &.active {
+    & .intro__message {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    & .form__field {
+      padding: 0 5.6rem;
+      width: calc(100% - 21rem);
+    }
   }
 
   @media (max-width: $tablet) and (orientation: portrait) {
